@@ -21,6 +21,9 @@ namespace MECS2
             } else if (text.Length > 0)
             {
                 Console.WriteLine(text);
+            } else
+            {
+                Console.WriteLine(d);
             }
         }
     }

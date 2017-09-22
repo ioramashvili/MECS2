@@ -25,6 +25,8 @@ namespace MECS2
             {
                 Console.WriteLine(d);
             }
+
+            Console.WriteLine("This is it");
         }
     }
 }

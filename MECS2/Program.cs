@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MECS2.Set;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +29,8 @@ namespace MECS2
             Console.WriteLine(d);
 
 
-            Language.PrintExample();
+            //Language.PrintExample();
+            Student.PrintExample();
         }  
     }
 }

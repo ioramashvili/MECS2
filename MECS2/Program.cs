@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common.String;
+using Common.Int;
+using Common.IEnumerable;
 
 namespace MECS2
 {
@@ -33,6 +36,19 @@ namespace MECS2
             //Student.PrintExample();
             //StackQueue.StackExample();
             //StackQueue.QueueExample();
+
+            Console.WriteLine(5.GetRandom());
+            Console.WriteLine("g".IsNullOrEmpty());
+
+            string name = "Some string";
+            string emptyString = null;
+            IEnumerable<char> iString = "This is text";
+
+            Console.WriteLine(name.IsNullOrEmpty());
+            Console.WriteLine(emptyString.IsNullOrEmpty());
+            Console.WriteLine(iString.IsNullOrEmpty());
+
+            name.Print();
         }  
     }
 }

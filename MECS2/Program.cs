@@ -1,5 +1,4 @@
-﻿using MECS2.Set;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +31,8 @@ namespace MECS2
             //https://msdn.microsoft.com/en-us/library/system.collections.generic.aspx
             //Language.PrintExample();
             //Student.PrintExample();
+            //StackQueue.StackExample();
+            //StackQueue.QueueExample();
         }  
     }
 }

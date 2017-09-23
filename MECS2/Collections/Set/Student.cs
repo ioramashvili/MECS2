@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MECS2.Set
+namespace MECS2
 {
     class Student
     {

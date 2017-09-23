@@ -10,23 +10,25 @@ namespace MECS2
     {
         static void Main(string[] args)
         {
+
+            // Built in types
+            // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/built-in-types-table
+
             int integer = 0;
             string text = "some text";
             char c = 'a';
             double d = 1.1;
+            bool boolean = true;
 
-            if (integer > 0)
-            {
-                Console.WriteLine(integer);
-            } else if (text.Length > 0)
-            {
-                Console.WriteLine(text);
-            } else
-            {
-                Console.WriteLine(d);
-            }
+            Console.WriteLine(c.GetType());
+            Console.WriteLine(integer);
+            Console.WriteLine(text);
+            Console.WriteLine(c);
+            Console.WriteLine(boolean);
+            Console.WriteLine(d);
 
-            Console.WriteLine("This is it");
-        }
+
+            Language.PrintExample();
+        }  
     }
 }

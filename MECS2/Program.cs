@@ -29,8 +29,9 @@ namespace MECS2
             Console.WriteLine(d);
 
 
+            //https://msdn.microsoft.com/en-us/library/system.collections.generic.aspx
             //Language.PrintExample();
-            Student.PrintExample();
+            //Student.PrintExample();
         }  
     }
 }

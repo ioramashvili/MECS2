@@ -212,6 +212,60 @@ namespace MECS2.Linq
 
             // Aggregate - https://msdn.microsoft.com/en-us/library/bb548651.aspx
             students.Aggregate(0, (initial, next) => initial += next.Age, r => r * r);
+
+            /*
+             * Projection 
+             */
+
+            students.Select(s => s.Age);
+            students.Select(s =>
+            {
+                return s.Age;
+            });
+
+            /*
+             * Grouping 
+             */
+
+            var nameAndMaxAge = students.GroupBy(s => s.FirstName).Select(s => s.Max(e => e.Age));
+
+            /*
+             * Concat 
+             */
+
+            students.Concat(new List<Student>()
+            {
+                new Student() { FirstName = "Name", LastName = "LastName", Age = 100, IsSingle = false }
+            });
+
+            /*
+            * Ordering 
+            */
+
+            students.OrderBy(s => s.FirstName);
+            students.OrderByDescending(s => s.LastName);
+            students.OrderBy(s => s.Age).ThenByDescending(s => s.FirstName);
+            students.Reverse();
+
+            /*
+            * Conversion 
+            */
+
+            var enumerableStudents = students.AsEnumerable();
+
+            var studentArray = students.ToArray();
+
+            var studentList = students.ToList();
+
+            Dictionary<string, decimal> studentMaxAgePerName = students.
+                GroupBy(p => p.FirstName).
+                ToDictionary(g => g.Key, g => g.Max(p => (decimal)p.Age));
+
+            /*
+            * Cast 
+            */
+
+            enumerableStudents.Cast<Student>();
         }
     }
 }

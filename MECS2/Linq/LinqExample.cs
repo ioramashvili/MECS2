@@ -7,7 +7,7 @@ using Common.IEnumerable;
 
 namespace MECS2.Linq
 {
-    class LinqExample
+    public class LinqExample
     {
         public static void StudentsExampe()
         {

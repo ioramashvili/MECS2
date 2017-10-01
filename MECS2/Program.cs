@@ -7,6 +7,7 @@ using Common.String;
 using Common.Int;
 using Common.IEnumerable;
 using MECS2.Linq;
+using MECS2.IO;
 
 namespace MECS2
 {
@@ -53,7 +54,9 @@ namespace MECS2
 
             //LinqExample.StudentsExampe();
             //LinqExample.DelegateActionFuncLambda();
-            LinqExample.LinqExamle();
+            //LinqExample.LinqExamle();
+
+            IOExample.Start();
         }  
     }
 }
